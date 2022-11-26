@@ -23,6 +23,8 @@ const AddNewEpigramForm = () => {
   const onFormSubmit = (evt: FormEvent) => {
     evt.preventDefault();
 
+    if (!author.trim() || !epigram.trim()) return;
+
     onAddEpigram({ author, text: epigram });
   };
 
