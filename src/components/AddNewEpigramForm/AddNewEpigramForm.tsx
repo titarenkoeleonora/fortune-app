@@ -28,8 +28,14 @@ const AddNewEpigramForm = () => {
 
   return (
     <AddNewEpigramFormWrapper ref={FormRef} onSubmit={onFormSubmit}>
-      <Input name="author" label=" *Author" value={author} onChange={onAuthorChange} />
-      <Textarea name="epigram" label="*Epigram" value={epigram} onChange={onEpigramChange} />
+      <Input name="author" label=" *Author" value={author} required onChange={onAuthorChange} />
+      <Textarea
+        name="epigram"
+        label="*Epigram"
+        value={epigram}
+        required
+        onChange={onEpigramChange}
+      />
       <ButtonsWrapper>
         <Button onClick={onCloseAddNewEpigramModal}>Cancel</Button>
         <Button type="submit">+ Add</Button>
