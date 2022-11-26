@@ -7,7 +7,7 @@
 
 ### 🏠 [Homepage](https://github.com/titarenkoeleonora/fortune-app)
 
-### ✨ [Demo](..)
+### ✨ [Demo](https://fortune-app-phi.vercel.app/)
 
 ## What's done
 
