@@ -8,8 +8,8 @@ import Textarea from '../UI/Textarea/Textarea';
 import { AddNewEpigramFormWrapper, ButtonsWrapper } from './AddNewEpigramForm.styles';
 
 const AddNewEpigramForm = () => {
-  const [author, setAuthor] = useState('');
-  const [epigram, setEpigram] = useState('');
+  const [author, setAuthor] = useState<string>('');
+  const [epigram, setEpigram] = useState<string>('');
 
   const FormRef = useRef<HTMLFormElement>(null);
 

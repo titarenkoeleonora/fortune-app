@@ -6,7 +6,6 @@ export const HeaderWrapper = styled.header(
   ({ theme }) => css`
     padding: 23px 0;
     background-color: ${theme.colors.backgroundPrimary};
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 
     > div {
       display: flex;

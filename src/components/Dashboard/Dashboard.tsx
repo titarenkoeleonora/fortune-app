@@ -1,14 +1,15 @@
 import { useCallback, useContext, useEffect, useState } from 'react';
 
 import EpigramsContext from '../../store/epigramsContext';
+import { IEpigram } from '../../types';
 import { DashboardWrapper } from './Dashboard.styles';
 import Epigram from './Epigram/Epigram';
 
 const Dashboard = () => {
   const { epigrams } = useContext(EpigramsContext);
 
-  const [randomEpigram, setRandomEpigram] = useState(epigrams[0]);
-  const [isAutoSlideShow, setIsAutoSlideShow] = useState(true);
+  const [randomEpigram, setRandomEpigram] = useState<IEpigram>(epigrams[0]);
+  const [isAutoSlideShow, setIsAutoSlideShow] = useState<boolean>(true);
 
   const cleanup = (intervalId: NodeJS.Timer) => clearInterval(intervalId);
 
